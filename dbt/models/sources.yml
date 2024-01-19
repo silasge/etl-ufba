@@ -1,0 +1,27 @@
+version: 2
+
+# external sources
+sources:
+  - name: socioeconomic
+    meta:
+      external_location: "read_parquet('../gdrive/socioeconomico/{name}.parquet')"
+    tables:
+      - name: BI_Vestibular_2009_Inscritos
+      - name: BI_Vestibular_2010_Inscritos
+      - name: BI_Vestibular_2011_Inscritos
+      - name: BI_Vestibular_2012_Inscritos
+      - name: BI_Vestibular_2013_Inscritos
+      - name: Vestibular_2005_inscritos
+      - name: Vestibular_2006_inscritos
+      - name: Vestibular_2007_inscritos
+      - name: Vestibular_2008_Inscritos
+      - name: Vestibular_2009_Inscritos
+      - name: Vestibular_2010_Inscritos
+      - name: Vestibular_2011_Inscritos
+      - name: Vestibular_2012_Inscritos
+      - name: Vestibular_2013_Inscritos
+  - name: academic
+    tables:
+      - name: ufba_academica
+        meta:
+          external_location: "read_parquet('../gdrive/ufba_academica/ufba_academica_0321.parquet')"

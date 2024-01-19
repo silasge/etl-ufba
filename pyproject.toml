@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "extract"
+version = "0.1.0"
+description = ""
+authors = ["Silas Genário <silasge.dev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+py7zr = "^0.20.8"
+pydrive2 = "^1.19.0"
+dbt-core = "^1.7.4"
+dbt-duckdb = "^1.7.1"
+
+[tool.poetry.scripts]
+download = "extract.download:download_from_gdrive"
+unzip = "extract.unzip:unzip_gdrive_files"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

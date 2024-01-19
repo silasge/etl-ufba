@@ -1,0 +1,8 @@
+ufba:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../db/ufba.duckdb
+      threads: 1
+      schema: ufba

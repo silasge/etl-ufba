@@ -1,0 +1,7 @@
+.venv
+logs/
+client_secrets.json
+__pycache__/
+gdrive/
+.vscode/
+.user.yml
