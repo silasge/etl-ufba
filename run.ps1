@@ -1,3 +1,6 @@
+# Install poetry dependences
+poetry install
+
 # Download gdrive files
 poetry run download `
     -i $env:SOCIOECONOMICO `
@@ -14,3 +17,9 @@ poetry run unzip `
 # Delete all zips
 Remove-Item $zip_socioeco
 Remove-Item $zip_academica 
+
+# Run dbt
+Set-Location .\dbt
+poetry run dbt seed
+poetry run dbt run
+Set-Location ..

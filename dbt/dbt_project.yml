@@ -36,3 +36,11 @@ models:
     staging:
       +schema: staging
       +materialized: table
+    intermediate:
+      +schema: intermediate
+      +materialized: table
+
+seeds:
+  ufba:
+    +schema: seeds
+    +delimiter: ";"

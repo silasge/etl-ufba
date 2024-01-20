@@ -5,7 +5,7 @@ source as (
 ),
 
 ufba_academica_selected as (
-    select 
+    select
         cpf::varchar as cpf,
         mtr::varchar as mtr,
         inscrica::varchar as inscrica,
@@ -50,7 +50,7 @@ ufba_academica_selected as (
         cor_nm_cor::varchar as cor_nm_cor,
         aln_nm_cidade_nascimento::varchar as aln_nm_cidade_nascimento,
         eda_nm_email::varchar as eda_nm_email
-    from 
+    from
         source
 
 )
